@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href="../estilos/index_css.css">
+    <title>Formulario libros</title>
+</head>
+
+<body class=".body-form"> <!-- Inicio del cuerpo / contenido de la página -->
+   
+    <div class="barranav">
+        <header class="header">
+            <div class="nav-superior">
+                <!-- Contenedor .logo que contiene el logo de la pagina -->
+                <!-- <div class="logo"> -->
+                    <a href="../index.html"><img class="logo" src="../img/logo.png" alt="logo de la página"></a>
+                <!-- </div> -->
+                <!-- <div> -->
+                    <nav class="nav">
+                        <ul class="nav-links">
+                            <li><a href="../auxiliares/autores.html">Alta autores</a></li>
+                            <li><a href="../auxiliares/libros.html">Alta libros</a></li>
+                            <li><a href="#">Lista autores</a></li>
+                            <li><a href="#">Lista libros</a></li>
+                        </ul>
+                    </nav>
+                <!-- </div> -->
+            </div>
+            <!-- Navegacion con lista y sublista desplegable -->
+            <nav class="nav-down">
+                <ul class="nav-links">
+                    <li><a href="#">Libros</a></li>
+                    <li><a href="#">Géneros</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Alta fantasía</a></li>
+                            <li><a href="#">Baja fantasía</a></li>
+                            <li><a href="#">Fantasía heroica</a></li>
+                            <li><a href="#">Fantasía oscura</a></li>
+                            <li><a href="#">Ciencia ficción fantástica</a></li>
+                            <li><a href="#">Fantasía histórica</a></li>
+                            <li><a href="#">Realismo mágico</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Búsqueda</a></li>
+                </ul>
+            </nav> 
+        </header>
+    </div>
+   
+    <div id="cont-form"> <!-- Creación de div para todo el formulario -->
+        <form class="formulario"> <!-- Inicia un formulario -->
+
+            <label class="txt-form">ID:</label> <!-- Etiqueta de formulario con clase -->
+            <input class="input-form" type="texto" placeholder="Introduce el ID" id="id_lib" name="id_lib" required>
+            <!-- Campo de entrada de texto con marcador de posición y requisito de entrada -->
+
+            <label class="txt-form">Título:</label>
+            <input class="input-form" type="texto" placeholder="Introduce el título" id="id_tit" name="tit" required>
+
+            <label class="txt-form">Fecha de publicación:</label>
+            <input class="input-form" type="date" placeholder="Introduce la fecha de publicación" id="id_date"
+                name="date_lib" required>
+            <!-- Campo de entrada de FECHA con marcador de posición y requisito de entrada -->
+
+            <label class="txt-form">Reseña:</label>
+            <input class="input-form" type="text" placeholder="Publica la reseña" id="id_review" name="review"
+                required></input>
+
+                <!-- Campo de entrada de archivo en ordenador. -->
+            <label class="txt-form">Portada (foto):</label>
+            <input class="input-form" type="file" id="id_photo" name="photo" required>
+
+            <!-- Selector de autores, desde JS se pueden introducir las options necesarias -->
+            <label class="txt-form">Autor:</label>
+            <select class="input-form" type="texto" id="id_author" name="author" required>
+                <option value="Autor1">Autor1</option>
+            </select>
+            <!-- Id del boton btn-form para editar su estilo -->
+
+            <label class="txt-form">Género:</label>
+            <select class="input-form" type="texto" id="id_author" name="author" required>
+                <option value="Genero1">Genero1</option>
+            </select>
+            <button id="btn-form" type="submit">Guardar Libro</button> <!-- Crea botón para guardar-->
+
+
+        </form> <!-- Finaliza el formulario -->
+    </div> <!-- Fin de div -->
+
+</body> <!-- Fin del cuerpo / fin del contenido de la página -->
+<script src="../Scripts/scripts.js"></script>
+</html>

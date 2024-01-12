@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Estilo formularios  -->
+    <link rel='stylesheet' type='text/css' media='screen' href="../estilos/index_css.css">
+    <title>Formulario autores</title>
+</head>
+
+<body class=".body-form">
+    <!-- Contenedor del formulario -->
+    <div class="barranav">
+        <header class="header">
+            <div class="nav-superior">
+                <!-- Contenedor .logo que contiene el logo de la pagina -->
+                <!-- <div class="logo"> -->
+                <a href="../index.html"><img class="logo" src="../img/logo.png" alt="logo de la página"></a>
+                <!-- </div> -->
+                <!-- <div> -->
+                <nav class="nav">
+                    <ul class="nav-links">
+                        <li><a href="../auxiliares/autores.html">Alta autores</a></li>
+                        <li><a href="../auxiliares/libros.html">Alta libros</a></li>
+                        <li><a href="#">Lista autores</a></li>
+                        <li><a href="#">Lista libros</a></li>
+                    </ul>
+                </nav>
+                <!-- </div> -->
+            </div>
+            <!-- Navegacion con lista y sublista desplegable -->
+            <nav class="nav-down">
+                <ul class="nav-links">
+                    <li><a href="#">Libros</a></li>
+                    <li><a href="#">Géneros</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Alta fantasía</a></li>
+                            <li><a href="#">Baja fantasía</a></li>
+                            <li><a href="#">Fantasía heroica</a></li>
+                            <li><a href="#">Fantasía oscura</a></li>
+                            <li><a href="#">Ciencia ficción fantástica</a></li>
+                            <li><a href="#">Fantasía histórica</a></li>
+                            <li><a href="#">Realismo mágico</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Búsqueda</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div id="cont-form">
+        <!-- Formulario para introducir datos de los autores -->
+        <form class="formulario">
+            <!-- Clase txt-form en las marcas label para editar el extilo del texto -->
+            <label class="txt-form">ID autor:</label>
+            <input class="input-form" type="texto" placeholder="Introduce el ID" id="id_author" name="author" required>
+
+            <label class="txt-form">Nombre:</label>
+            <input class="input-form" type="texto" placeholder="Introduce el nombre del autor" id="id_name"
+                name="name_author" required>
+
+            <!-- Tipo de entrada requerido date -->
+            <label class="txt-form">Fecha de nacimiento:</label>
+            <input class="input-form" type="date" placeholder="Introduce la fecha de nacimiento" id="id_date1"
+                name="date1" required>
+
+            <!-- Tipo de entrada requerido date -->
+            <label class="txt-form">Fecha de fallecimiento:</label>
+            <input class="input-form" type="date" placeholder="Introduce la fecha de fallecimineto" id="id_date2"
+                name="date2"></input>
+
+            <label class="txt-form">Nacionalidad:</label>
+            <input class="input-form" type="texto" placeholder="Introduce la nacionalidad" id="id_nat" name="nat"
+                required>
+
+            <label class="txt-form">Biografía:</label>
+            <input class="input-form" type="text" placeholder="Describe la biografía del autor" id="id_bio" name="bio"
+                required>
+            <!-- Tipo de entrada archivo para seleccion de imagenes -->
+            <label class="txt-form">Foto:</label>
+            <input class="input-form" type="file" id="id_photo" name="photo" required>
+
+            <label class="txt-form">Obras:</label>
+            <input class="input-form" type="texto" placeholder="Introduce las obras del autor" id="id_ob" name="ob"
+                required>
+            <!-- Id del boton btn-form para editar su estilo -->
+            <button id="btn-form" type="guardr">Guardar Libro</button>
+        </form>
+    </div>
+
+</body>
+<script src="../Scripts/scripts.js"></script>
+</html>
