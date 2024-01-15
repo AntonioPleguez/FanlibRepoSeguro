@@ -23,4 +23,9 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+window.onload = function(){
+  var cont = document.getElementById('cont-carga');
+  cont.style.visibility = 'hidden'
+  cont.style.opacity = '0'
+}
 

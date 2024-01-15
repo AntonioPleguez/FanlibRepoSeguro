@@ -15,6 +15,30 @@
     background-size: cover;
 }
 
+/* Estilo de cargador de pagina */
+#cont-carga {
+    background-color: burlywood;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    transition: 1s ease-out;
+    z-index: 10000;
+}
+
+#carga {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid #949697;
+    animation: spin 2s linear infinite;
+}
+
 /*Estilo que abarca todo la navbar de la página principal*/
 .header {
     /* Estilo letras solo para navbar */
@@ -265,12 +289,14 @@ body {
 }
 
 .busqueda{
-    border: 6px solid;
-    border-color: black;
+    border: 1px solid;
+    width: 200px;
+    border-color: lightyellow;
     background-color: transparent;
     border-radius: 50px;
     font-size: 20px;
     text-align: center;
     color: white;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
