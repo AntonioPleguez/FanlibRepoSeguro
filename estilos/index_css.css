@@ -206,14 +206,6 @@ body {
 
 }
 
-/* .librossuperior{
-    display: flex;
-    flex-direction: row;
-}
-.librosinferior{
-    display: flex;
-    flex-direction: row;
-} */
 .body-form {
     /*  Estilos para el cuerpo */
     background-color: rgba(74, 27, 27, 0.194);
@@ -236,12 +228,13 @@ body {
 
 .formulario {
     /* Estilos para el contenedor formulario (.formulario) */
-    background-color: #e0dddd;
+    background-color: #e0ddddae;
     padding: 20px;
     /* Agrega espacio interno alrededor */
     width: 300px;
-    border: 1px solid black;
+    border: 3px solid black;
     /* Borde al formulario con grosor de 1px negro */
+    
 }
 
 .txt-form {
@@ -269,3 +262,14 @@ body {
     border: 1px solid black;
     width: 100%;
 }
+
+.busqueda{
+    border: 6px solid;
+    border-color: black;
+    background-color: transparent;
+    border-radius: 50px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
