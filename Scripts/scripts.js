@@ -29,3 +29,6 @@ window.onload = function () {
   cont.style.visibility = "hidden";
   cont.style.opacity = "0";
 };
+document.getElementById("btn-volver").addEventListener("click", function() {
+  window.location.href = "../index.html";
+})
