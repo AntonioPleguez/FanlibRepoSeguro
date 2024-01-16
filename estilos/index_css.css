@@ -11,7 +11,7 @@
 
 #body-index {
     background-color: lightyellow;
-    background: url(../img/banner3.png);
+    background: url(../img/banner3.png);  
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -24,7 +24,7 @@
     position: fixed;
     transition: 2s ease-out;
     z-index: 10000;
-    background: url(/img/banner3.png);
+    background: url(/img/banner3.png);  
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -42,16 +42,14 @@
     position: fixed;
     z-index: 1;
     width: 100%;
-    background-color: rgba(8, 8, 8, 0.5) !important;
-    /* Asegúrate de que el alfa (opacidad) sea menor que 1, para que podamos ver a través del color[^2^][2]. */
+    background-color: rgba(8, 8, 8, 0.5) !important; /* Asegúrate de que el alfa (opacidad) sea menor que 1, para que podamos ver a través del color[^2^][2]. */
     /* background-color: rgba(79, 55, 17, 0.5) !important; */
     /* Asegúrate de que el alfa (opacidad) sea menor que 1, para que podamos ver a través del color[^2^][2]. */
     height: 155px;
     backdrop-filter: blur(5px);
     /* Añade esta línea */
 }
-
-.headerautores {
+.headerautores{
     /* Estilo letras solo para navbar */
     font-family: 'Nunito Sans', sans-serif;
     font-size: 20px;
@@ -59,15 +57,13 @@
     position: fixed;
     z-index: 1;
     width: 100%;
-    background-color: rgba(8, 8, 8, 0.5) !important;
-    /* Asegúrate de que el alfa (opacidad) sea menor que 1, para que podamos ver a través del color[^2^][2]. */
+    background-color: rgba(8, 8, 8, 0.5) !important; /* Asegúrate de que el alfa (opacidad) sea menor que 1, para que podamos ver a través del color[^2^][2]. */
     /* background-color: rgba(79, 55, 17, 0.5) !important; */
     /* Asegúrate de que el alfa (opacidad) sea menor que 1, para que podamos ver a través del color[^2^][2]. */
     height: 95px;
     backdrop-filter: blur(5px);
     /* Añade esta línea */
 }
-
 .headerautores .nav-superior {
     display: flex;
     align-items: center;
@@ -77,7 +73,10 @@
     width: 100%;
     height: 95px;
     text-align: center;
-
+    
+}
+.nav{
+    margin-left: -70px;
 }
 
 .header .nav-superior {
@@ -97,11 +96,10 @@
     width: auto;
     padding: 5px 10%;
 }
-
 .header .nav-superior {
     cursor: pointer;
     z-index: 10;
-    width: 100%;
+    width: auto;
     padding: 5px 10%;
 }
 
@@ -109,42 +107,36 @@
     height: 70px;
     width: auto;
     transition: all 0.3s;
-    /* margin-right: 5%; */
+    margin-right: 5%;
 }
-
 .header .nav-superior img {
     height: 70px;
     width: auto;
     transition: all 0.3s;
-    /* margin-right: 5%; */
+    margin-right: 5%;
 }
 
 .headerautores .nav-superior img:hover {
     transform: scale(1.1);
 }
-
 .header .nav-superior img:hover {
     transform: scale(1.1);
 }
 
 .headerautores .nav-superior .nav {
     width: 100%;
-display: flex;
+    /* display: flex; */
 }
-
 .header .nav-superior .nav {
     width: 100%;
-    display: flex;
-} 
-
-.headerautores .nav-superior .nav {
-    list-style: none;
-    /* width: 100%; */
-    /* display: inline-block; */
-    justify-content: center;
-    padding-right:80px ;
+    /* display: flex; */
 }
 
+.headerautores .nav-superior .nav .nav-links {
+    list-style: none;
+    width: 100%;
+    display: inline-block;
+}
 .header .nav-superior .nav .nav-links {
     list-style: none;
     width: 100%;
@@ -156,7 +148,6 @@ display: flex;
     justify-content: space-between;
     padding: 0 5%;
 }
-
 .header .nav-links li {
     display: inline-block;
     justify-content: space-between;
@@ -168,12 +159,11 @@ display: flex;
     font-size: 700;
     color: lightyellow;
     text-decoration: none;
-}
+} 
 
 .headerautores .nav-links li:hover {
     transform: scale(1.1);
 }
-
 .header .nav-links li:hover {
     transform: scale(1.1);
 }
@@ -189,15 +179,11 @@ display: flex;
     padding: 5px 20px;
     text-align: center;
 }
-
 /*Estilo del botón*/
 
-.header .nav, .headerautores .nav{
-    width: 30%;
-}
-.header #btn-volver {
+.header .btn button {
     font-weight: 700;
-    /* color: fardarkcyan; */
+    color: darkcyan;
     padding: 9px 25px;
     background: white;
     border: none;
@@ -206,13 +192,12 @@ display: flex;
     transition: all 0.3s ease 0s;
 }
 
-.headerautores #btn-volver:hover {
+.headerautores .btn button:hover {
     background-color: white;
     color: darkgoldenrod;
     transform: scale(1.1);
 }
-
-.header button:hover {
+.header .btn button:hover {
     background-color: white;
     color: darkgoldenrod;
     transform: scale(1.1);
@@ -231,7 +216,7 @@ display: flex;
     display: none;
     position: absolute;
     /* Asegúrate de que el alfa (opacidad) sea menor que 1, para que podamos ver a través del color[^2^][2]. */
-    background-color: rgba(0, 0, 0, 0.5) !important;
+    background-color: rgba(0, 0, 0, 0.5) !important; 
     /* background-color: rgba(47, 79, 79, 0.523); */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px 0;
@@ -275,7 +260,7 @@ body {
 .barranav {
     display: flex;
     justify-content: start;
-    /* margin-bottom: 15%; */
+    margin-bottom: 15%;
 }
 
 .portadas {
@@ -324,7 +309,7 @@ body {
     /* Centra los elementos en el centro */
     width: 100%;
     /* Ancho del contenedor al 100% */
-    min-height: 600px
+    min-height: 700px
         /* Establece la altura mínima del contenedor a 700px */
 }
 
@@ -335,9 +320,8 @@ body {
     /* Agrega espacio interno alrededor */
     width: 300px;
     border: 3px solid black;
-    margin-top: 100px;
     /* Borde al formulario con grosor de 1px negro */
-
+    
 }
 
 .txt-form {
@@ -345,7 +329,7 @@ body {
     display: block;
     /* Disposicion de los contenedores como bloques */
     margin-bottom: 8px;
-
+    
 }
 
 .input-form {
@@ -367,7 +351,7 @@ body {
     width: 100%;
 }
 
-.busqueda {
+.busqueda{
     border: 1px solid;
     width: 200px;
     border-color: lightyellow;
@@ -379,20 +363,20 @@ body {
     font-family: 'Nunito Sans', sans-serif;
 }
 
-.busqueda_aux {
-    border: 1px solid;
-    width: 200px;
-    border-color: lightyellow;
-    background-color: transparent;
-    border-radius: 50px;
-    font-size: 20px;
-    text-align: center;
-    color: white;
-    font-family: 'Nunito Sans', sans-serif;
-
+.busqueda_aux{
+        border: 1px solid;
+        width: 200px;
+        border-color: lightyellow;
+        background-color: transparent;
+        border-radius: 50px;
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        font-family: 'Nunito Sans', sans-serif;
+        
 }
 
-.inicio_titulo {
+.inicio_titulo{
     font-family: 'Cinzel Decorative', serif;
     text-align: center;
     font-size: 300px;
@@ -402,24 +386,24 @@ body {
 
 }
 
-.inicio_titulo_sombra {
+.inicio_titulo_sombra{
     font-family: 'Cinzel Decorative', serif;
     text-align: center;
     font-size: 310px;
     z-index: 0;
-    color: white;
+    color:white;
     margin-top: -425px;
 
 }
 
-.aura {
+.aura{
     display: flex;
     justify-content: center;
 }
 
 
 
-.header #btn-volver, .headerautores #btn-volver {
+.nav button{
     width: 250px;
     height: 75px;
     border-radius: 5px;
@@ -427,32 +411,10 @@ body {
     font-family: 'Cinzel Decorative', serif;
     font-weight: bold;
     border: 2px solid black;
-
+   
 }
 
-/*Estilo del botón*/
-
-.header .btn #btn-volver {
-    font-weight: 700;
-    color: darkcyan;
-    padding: 9px 25px;
- transition: all 0.3s ease 0s;
-}
-
-.headerautores .btn #btn-volver:hover, .header .btn #btn-volver:hover  {
-    background-color: white;
-    color: darkgoldenrod;
-    transform: scale(1.1);
-}
-
-
-#btn-volver {
-    width: 250px;
-    height: 75px;
-    border-radius: 5px;
-}
-
-#btn-volver:hover {
+.nav button:hover{
     box-shadow: 0px 0px 20px rgb(255, 255, 255);
     cursor: pointer;
     transition: 0.5s;
@@ -461,8 +423,7 @@ body {
 .search-container {
     display: flex;
     align-items: center;
-    margin-left: -215px;
-    /* Empuja el cuadro de búsqueda hacia la derecha */
+    margin-left: -215px; /* Empuja el cuadro de búsqueda hacia la derecha */
 }
 
 .busqueda_aux {
@@ -475,38 +436,50 @@ body {
     text-align: center;
     color: white;
     font-family: 'Nunito Sans', sans-serif;
-    margin-left: 10px;
-    /* Añade un espacio entre el botón "Volver" y el cuadro de búsqueda */
+    margin-left: 10px; /* Añade un espacio entre el botón "Volver" y el cuadro de búsqueda */
 }
 
-.busqueda_aux:hover {
+.busqueda_aux:hover{
     transform: scale(1);
 }
 
-.table_author {
+.table_author{
     display: flex;
     justify-content: center;
-
+    
 }
-
-table {
-    border: solid 4px black;
+table{
+    border: solid 3px rgb(0, 0, 0);
     width: 600px;
     height: 600px;
     border-collapse: collapse;
-    background-color: white;
-    margin-top: 100px;
+    background-color: rgba(255, 255, 255, 0.778);
+    margin-top: -50px;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 20px;
+    text-align: center;
+    
+    
+}
+table th{
+    border: solid 2px white;
+    font-size: 40px;
+    background-color: black;
+    color: white;
 }
 
-table th {
+table td{
     border: solid 2px black;
+
 }
 
-table td {
-    border: solid 2px black;
+table tr:nth-child(even) {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    
 }
 
-.button_list_author button {
+.button_list_author button{
     width: 250px;
     height: 75px;
     border-radius: 5px;
@@ -515,39 +488,21 @@ table td {
     font-weight: bold;
     border: 2px solid black;
     cursor: pointer;
-
+    
 }
 
-.button_list_author button:hover {
+.button_list_author button:hover{
     box-shadow: 0px 0px 20px rgb(255, 255, 255);
     cursor: pointer;
     transition: 0.5s;
 
 }
 
-.button_list_author {
+.button_list_author{
     display: flex;
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 10px;
-}
-.modificar-btn {
-    background-color: #4CAF50;
-    color: white;
-    border: 1px solid black;
-    text-align: center;
-    text-decoration: none;
-    font-size: 14px;
-    cursor: pointer;
-}
-.eliminar-btn {
-    background-color: #e54343;
-    color: white;
-    border: 1px solid black;
-    text-align: center;
-    text-decoration: none;
-    font-size: 14px;
-    cursor: pointer;
 }
 
 
