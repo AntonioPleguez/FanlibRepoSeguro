@@ -363,6 +363,19 @@ body {
     font-family: 'Nunito Sans', sans-serif;
 }
 
+.busqueda_aux{
+        border: 1px solid;
+        width: 200px;
+        border-color: lightyellow;
+        background-color: transparent;
+        border-radius: 50px;
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        font-family: 'Nunito Sans', sans-serif;
+        
+}
+
 .inicio_titulo{
     font-family: 'Cinzel Decorative', serif;
     text-align: center;
@@ -406,5 +419,80 @@ body {
     cursor: pointer;
     transition: 0.5s;
 }
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-left: -215px; /* Empuja el cuadro de búsqueda hacia la derecha */
+}
+
+.busqueda_aux {
+    border: 1px solid;
+    width: 200px;
+    border-color: lightyellow;
+    background-color: transparent;
+    border-radius: 50px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-left: 10px; /* Añade un espacio entre el botón "Volver" y el cuadro de búsqueda */
+}
+
+.busqueda_aux:hover{
+    transform: scale(1);
+}
+
+.table_author{
+    display: flex;
+    justify-content: center;
+    
+}
+table{
+    border: solid 4px black;
+    width: 600px;
+    height: 600px;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: -50px;
+}
+table th{
+    border: solid 2px black;
+}
+
+table td{
+    border: solid 2px black;
+}
+
+.button_list_author button{
+    width: 250px;
+    height: 75px;
+    border-radius: 5px;
+    font-size: 35px;
+    font-family: 'Cinzel Decorative', serif;
+    font-weight: bold;
+    border: 2px solid black;
+    cursor: pointer;
+    
+}
+
+.button_list_author button:hover{
+    box-shadow: 0px 0px 20px rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.button_list_author{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
 
 
