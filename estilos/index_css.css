@@ -75,9 +75,9 @@
     text-align: center;
     
 }
-.nav{
+/* .nav{
     margin-left: -70px;
-}
+} */
 
 .header .nav-superior {
     display: flex;
@@ -181,9 +181,9 @@
 }
 /*Estilo del botón*/
 
-.header .btn button {
+.header #btn-volver {
     font-weight: 700;
-    color: darkcyan;
+    /* color: darkcyan; */
     padding: 9px 25px;
     background: white;
     border: none;
@@ -192,12 +192,12 @@
     transition: all 0.3s ease 0s;
 }
 
-.headerautores .btn button:hover {
+.headerautores #btn-volver:hover {
     background-color: white;
     color: darkgoldenrod;
     transform: scale(1.1);
 }
-.header .btn button:hover {
+.header #btn-volver:hover {
     background-color: white;
     color: darkgoldenrod;
     transform: scale(1.1);
@@ -309,7 +309,7 @@ body {
     /* Centra los elementos en el centro */
     width: 100%;
     /* Ancho del contenedor al 100% */
-    min-height: 700px
+    min-height: 600px
         /* Establece la altura mínima del contenedor a 700px */
 }
 
@@ -401,9 +401,7 @@ body {
     justify-content: center;
 }
 
-
-
-.nav button{
+.nav #btn-volver{
     width: 250px;
     height: 75px;
     border-radius: 5px;
@@ -411,14 +409,15 @@ body {
     font-family: 'Cinzel Decorative', serif;
     font-weight: bold;
     border: 2px solid black;
+    margin-left: -75px;
    
 }
 
-.nav button:hover{
+/* .nav :hover{
     box-shadow: 0px 0px 20px rgb(255, 255, 255);
     cursor: pointer;
     transition: 0.5s;
-}
+} */
 
 .search-container {
     display: flex;
