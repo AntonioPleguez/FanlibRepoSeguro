@@ -461,14 +461,14 @@ table{
     
 }
 table th{
-    border: solid 2px white;
+    border: solid 1px white;
     font-size: 40px;
     background-color: black;
     color: white;
 }
 
 table td{
-    border: solid 2px black;
+    border: solid 1px black;
 
 }
 
@@ -511,6 +511,12 @@ table tr:nth-child(even) {
     text-decoration: none;
     font-size: 14px;
     cursor: pointer;
+    font-family: 'Cinzel Decorative', serif;
+    width: 100%;
+    height: 100%;
+
+   
+    
 }
 .eliminar-btn {
     background-color: #e54343;
@@ -520,6 +526,9 @@ table tr:nth-child(even) {
     text-decoration: none;
     font-size: 14px;
     cursor: pointer;
+    font-family: 'Cinzel Decorative', serif;
+    width: 100%;
+    height: 100%;
 }
 
 
