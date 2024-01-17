@@ -281,16 +281,18 @@ body {
     margin-top: 20px;
     margin-right: 75px;
     margin-left: 75px;
+    font-family: 'Cinzel Decorative', serif;
 }
 
 .libros h4 {
+    padding-top: 10px;
     color: white;
 }
 
 .foto {
     width: 170px;
     height: 150px;
-
+    padding-top: 10px;
 }
 
 .body-form {
@@ -449,7 +451,7 @@ body {
 }
 table{
     border: solid 3px rgb(0, 0, 0);
-    width: 600px;
+    width: 1000px;
     height: 600px;
     border-collapse: collapse;
     background-color: rgba(255, 255, 255, 0.778);
