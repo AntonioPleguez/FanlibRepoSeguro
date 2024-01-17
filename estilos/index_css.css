@@ -457,13 +457,14 @@ table{
     font-family: 'Cinzel Decorative', serif;
     font-size: 20px;
     text-align: center;
+    opacity: 1;
     
     
 }
 table th{
-    border: solid 1px white;
+    border: solid 2px black;
     font-size: 40px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.848);
     color: white;
 }
 
@@ -473,7 +474,7 @@ table td{
 }
 
 table tr:nth-child(even) {
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.848);
     color: white;
     
 }
@@ -491,9 +492,10 @@ table tr:nth-child(even) {
 }
 
 .button_list_author button:hover{
-    box-shadow: 0px 0px 20px rgb(255, 255, 255);
+    transform: scale(1.1);
+    color: darkgoldenrod;
     cursor: pointer;
-    transition: 0.5s;
+    transition : 0.4s ease 0;
 
 }
 
@@ -529,6 +531,34 @@ table tr:nth-child(even) {
     font-family: 'Cinzel Decorative', serif;
     width: 100%;
     height: 100%;
+}
+
+.conf h1{
+    font-family: 'Cinzel Decorative', serif;
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    background-color: rgba(255, 255, 255, 0.284);
+    border-radius: 35px;
+    padding: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+    
+}
+
+.btn-conf{
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    font-family: 'Cinzel Decorative', serif;
+}
+
+.conf{
+    display: flex;
+    justify-content: center;
+    
 }
 
 
