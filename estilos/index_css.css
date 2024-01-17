@@ -561,6 +561,36 @@ table tr:nth-child(even) {
     
 }
 
+.input-table{
+    width: 25px;
+	height: 30px;
+    
+}
+
+.delete-all{
+    background-color: #e13232;
+    color: black;
+    border: 1px solid black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: 'Cinzel Decorative', serif;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.delete-all:hover{
+    color: white;
+}
+
+
+
+
+
 
 
 
