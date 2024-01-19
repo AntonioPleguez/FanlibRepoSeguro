@@ -1,0 +1,20 @@
+**`AÃ±adir autor`**
+INSERT INTO Autor (nombre,fechaNacimiento,fechaMuerte,nacionalidad,biografia,foto,obras)
+VALUES ('nombre','Nacimiento','Muerte','nacionalidad','biografia','foto','obras');
+
+INSERT INTO Obra (titulo, fechaPublicacion, resena, portada, genero, Autor_Obra, Obra_Autor) VALUES ('titulo', 'fechaPublicacion', 'resena', 'portada', 'genero', 'Autor_Obra', 'Obra_Autor')
+
+**`Ver autores`**
+SELECT nombre,fechaNacimiento,fechaMuerte,nacionalidad,biografia,foto,obras FROM Autor
+
+**`Ver libros`**
+SELECT titulo, fechaPublicacion, resena, portada, genero, Autor_Obra, nombre.a FROM Obra o
+INNER JOIN Autor a ON o.Autor_Obra = a.id_autor;
+
+**`Borrar autor`**
+DELETE from Autor
+WHERE id_autor = 01
+
+**`Borrar Libro`**
+DELETE from Libro
+WHERE id_libro = 04
